@@ -1,0 +1,18 @@
+namespace: bimal
+labels:
+  app: ghee-app
+replicas: 1
+
+# container
+name: cont-1
+image:
+  repository: bimalk074/ghee
+  tag: v1
+
+containerPort: 5656
+
+# service
+service:
+  type: LoadBalancer
+  port: 5656
+  targetPort: 5656
