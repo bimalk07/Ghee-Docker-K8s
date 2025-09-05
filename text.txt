@@ -1,0 +1,3 @@
+docker network create ghee-net
+docker run --name mongodb --network ghee-net -d mongo
+docker run -d --name ghee-app --network ghee-net -p 5656:5656 ghee2:v1
