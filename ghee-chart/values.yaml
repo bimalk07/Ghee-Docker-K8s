@@ -1,7 +1,7 @@
 namespace: bimal
 labels:
   app: ghee-app
-replicas: 1
+replicas: 2
 
 # container
 name: cont-1
