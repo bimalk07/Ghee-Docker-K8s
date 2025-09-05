@@ -16,3 +16,15 @@ service:
   type: LoadBalancer
   port: 5656
   targetPort: 5656
+
+# mongodb
+mongodb:
+  labels:
+    app: mongodb
+  replicaCount: 1
+  name: mongodb
+  image:
+    repository: mongo
+    tag: latest
+  containerPort: 27017
+  type: ClusterIP
